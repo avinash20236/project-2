@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartFit - Fitness Band</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #1e88e5;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      border: 1px solid #ddd;
+    }
+
+    .product-description {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border: 2px solid #90caf9;
+    }
+
+    .product-description h2 {
+      margin-top: 0;
+      color: #1565c0;
+    }
+
+    .cta-button {
+      background-color: #43a047;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 1rem;
+      display: inline-block;
+    }
+
+    form {
+      margin-top: 3rem;
+      padding: 1.5rem;
+      border: 1px solid #ccc;
+      background-color: #fafafa;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-weight: bold;
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #999;
+      border-radius: 4px;
+    }
+
+    form .checkbox-container {
+      margin-bottom: 1rem;
+    }
+
+    form input[type="submit"] {
+      background-color: #1e88e5;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      background: #eee;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header, main, form {
+        padding: 1rem;
+      }
+      .cta-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SmartFit Pro</h1>
+    <p>Your Fitness Companion</p>
+  </header>
+
+  <main>
+    <section class="product-description">
+      <h2>Track Your Health, Level Up Your Life</h2>
+      <p>SmartFit Pro is a lightweight, water-resistant fitness band that tracks your steps, heart rate, sleep, and more. Stay fit, get notifications, and take control of your wellness journey with SmartFit Pro!</p>
+      <a href="#signup" class="cta-button">Pre-Order Now</a>
+    </section>
+
+    <section id="signup">
+      <h2>Join Our Newsletter</h2>
+      <p>Be the first to know about product updates, discounts, and fitness tips from Avinash.</p>
+      <form>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Avinash Kumar" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="agree" name="agree" required />
+          <label for="agree">I agree to receive emails and product updates</label>
+        </div>
+
+        <input type="submit" value="Subscribe Now" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SmartFit by Avinash. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
